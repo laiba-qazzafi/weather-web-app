@@ -121,6 +121,11 @@ function displayWeather(info) {
   }
 }
 
+arrowBack.addEventListener("click", () => {
+  wrapper.classList.remove("active");
+});
+
+
 function displayForecast(forecastData) {
   console.log("Forecast data:", forecastData);
 
@@ -178,6 +183,8 @@ function displayForecast(forecastData) {
 
       forecastItemsContainer.appendChild(forecastItem);
     });
+
+    wrapper2.classList.add("active");
 
     // Remove any error message if present
     const errorMessage = forecastItemsContainer.querySelector(".error-message");

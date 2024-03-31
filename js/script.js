@@ -11,6 +11,7 @@ const forecastPart = wrapper.querySelector(".forecast-part");
 const wIcon = weatherPart.querySelector("img");
 // const fIcon = forecastPart.querySelector("img");
 const arrowBack = wrapper.querySelector("header i");
+const arrowBack2 = wrapper2.querySelector("header i");
 
 // Event listeners
 inputField.addEventListener("keyup", (e) => {
@@ -123,6 +124,9 @@ function displayWeather(info) {
 
 arrowBack.addEventListener("click", () => {
   wrapper.classList.remove("active");
+});
+arrowBack2.addEventListener("click", () => {
+  wrapper2.classList.remove("active");
 });
 
 
